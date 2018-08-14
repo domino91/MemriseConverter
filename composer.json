@@ -1,0 +1,13 @@
+{
+    "name": "vendor/memrise-converter",
+    "description": "Description of project memriseConverter.",
+    "authors": [
+        {
+            "name": "dominik",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "stichoza/google-translate-php": "v3.2.13"
+    }
+}
