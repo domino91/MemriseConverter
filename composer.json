@@ -9,5 +9,8 @@
     ],
     "require": {
         "stichoza/google-translate-php": "v3.2.13"
+    },
+   "autoload": {
+        "psr-0": {"memriseConverter": "src/memriseConverter/"}
     }
 }
