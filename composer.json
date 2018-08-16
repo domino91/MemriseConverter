@@ -1,16 +1,17 @@
 {
     "name": "vendor/memrise-converter",
-    "description": "Description of project memriseConverter.",
+    "description": "Convert txt english phrases to translated polish to export in file csv",
     "authors": [
         {
-            "name": "dominik",
-            "email": "your@email.here"
+            "name": "Dominik Zawadzki",
+            "email": "dominik.zawadzki91@gmail.com"
         }
     ],
     "require": {
-        "stichoza/google-translate-php": "v3.2.13"
+        "stichoza/google-translate-php": "v3.2.13",
+        "ext-mbstring": "* 0"
     },
    "autoload": {
-        "psr-0": {"memriseConverter": "src/memriseConverter/"}
+        "psr-4": {"memriseConverter\\": "src/memriseConverter/"}
     }
 }

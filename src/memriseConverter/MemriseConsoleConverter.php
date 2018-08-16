@@ -4,6 +4,8 @@ namespace memriseConverter;
 use memriseConverter\translate\GoogleTranslateAdapter;
 use memriseConverter\translate\TranslateProvider;
 
+require __DIR__ . '/../../vendor/autoload.php';
+
 // Initialize
 if ($_SERVER['argc'] != 3) {
     die('Incorrect params');

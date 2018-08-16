@@ -1,7 +1,7 @@
 <?php
-namespace memriseConverter\dao;
+namespace memriseConverter\dao\interfaces;
 
-interface FileDaoInterface
+interface FileDaoItf
 {
     function setFileName(string $fileName);
     function loadPhrases(): PhraseCollectionItf;

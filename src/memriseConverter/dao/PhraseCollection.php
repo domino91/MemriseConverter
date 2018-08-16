@@ -2,6 +2,9 @@
 
 namespace memriseConverter\dao;
 
+use memriseConverter\dao\interfaces\PhraseCollectionItf;
+use memriseConverter\dao\interfaces\PhraseItf;
+
 class PhraseCollection implements PhraseCollectionItf
 {
     private $phraseArray = array();

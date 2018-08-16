@@ -1,6 +1,9 @@
 <?php
 namespace memriseConverter\dao;
 
+use memriseConverter\dao\interfaces\PhraseCollectionItf;
+use RuntimeException;
+
 class ExportCSVDao
 {
 
@@ -9,7 +12,7 @@ class ExportCSVDao
         $fp = fopen($fileName, 'w');
         
         if ($fp === FALSE) {
-            throw new \RuntimeException('Not access writeable to file "' . $fileName . '"');
+            throw new RuntimeException('Not access writeable to file "' . $fileName . '"');
         }
         
         foreach ($phraseCollection->getAll() as $phrase) {

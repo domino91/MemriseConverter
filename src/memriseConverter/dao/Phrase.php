@@ -1,6 +1,8 @@
 <?php
 namespace memriseConverter\dao;
 
+use memriseConverter\dao\interfaces\PhraseItf;
+
 class Phrase implements PhraseItf
 {
     /**

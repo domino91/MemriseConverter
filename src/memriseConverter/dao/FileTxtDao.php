@@ -1,7 +1,11 @@
 <?php
 namespace memriseConverter\dao;
 
-class FileTxtDao implements FileDaoInterface
+use memriseConverter\dao\interfaces\FileDaoItf;
+use memriseConverter\dao\interfaces\PhraseCollectionItf;
+use RuntimeException;
+
+class FileTxtDao implements FileDaoItf
 {
 
     private $fileName;
@@ -9,7 +13,7 @@ class FileTxtDao implements FileDaoInterface
     public function loadPhrases(): PhraseCollectionItf
     {
         if (!file_exists($this->fileName)) {
-            throw new \RuntimeException('File ' . $this->fileName . ' not found');
+            throw new RuntimeException('File ' . $this->fileName . ' not found');
         }
         
         $phraseCollection = new PhraseCollection();

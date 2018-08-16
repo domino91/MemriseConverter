@@ -1,6 +1,6 @@
 <?php
 
-namespace memriseConverter\dao;
+namespace memriseConverter\dao\interfaces;
 
 interface PhraseCollectionItf
 {
