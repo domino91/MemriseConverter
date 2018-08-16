@@ -1,0 +1,4 @@
+- create unit tests with vfsStream
+- check code coverage
+- refactor export to CSV, add abstract
+- scan project with phpmd, phpcs
