@@ -2,3 +2,4 @@
 - check code coverage
 - refactor export to CSV, add abstract
 - scan project with phpmd, phpcs
+- apply IteratorAggregate and ArrayIterator
